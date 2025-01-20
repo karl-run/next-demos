@@ -1,0 +1,12 @@
+{
+  "name": "next-demos",
+  "packageManager": "yarn@4.5.2",
+  "workspaces": [
+    "demos/*"
+  ],
+  "devDependencies": {
+    "@karl-run/prettier-config": "^1.0.1",
+    "prettier": "^3.4.2"
+  },
+  "prettier": "@karl-run/prettier-config"
+}
