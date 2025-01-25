@@ -1,9 +1,6 @@
 {
   "name": "next-demos",
   "packageManager": "yarn@4.6.0",
-  "workspaces": [
-    "demos/*"
-  ],
   "devDependencies": {
     "@karl-run/prettier-config": "^1.0.1",
     "prettier": "^3.4.2"
