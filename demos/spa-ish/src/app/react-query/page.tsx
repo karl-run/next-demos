@@ -19,12 +19,15 @@ function Page(): ReactElement {
   return (
     <div className="mt-8">
       <div className="my-2">
-          <div>Dette er en verdi fra React Query:</div>
-          <div className="border p-1">{data?.message ?? "ingenting enda"}</div>
+        <div>Dette er en verdi fra React Query:</div>
+        <div className="border p-1">{data?.message ?? "ingenting enda"}</div>
       </div>
       <div>Laster det? {isLoading ? "Ja" : "Nei"}</div>
       <div>Skjedde det en feil? {error ? `Ja, ${error.message}` : "Nei"}</div>
-        <div>Ventetid: {waitTime != null ? waitTime.toFixed(2) : 'Ingen (default 1000ms)'}</div>
+      <div>
+        Ventetid:{" "}
+        {waitTime != null ? waitTime.toFixed(2) : "Ingen (default 1000ms)"}
+      </div>
       <div className="flex gap-2 mt-4">
         <button className="border p-1" onClick={() => refetch()}>
           Hent på nytt

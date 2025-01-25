@@ -1,7 +1,7 @@
-export const dynamic = 'force-dynamic'
+export const dynamic = "force-dynamic";
 
 export default function Home() {
-  console.info("Log from page")
+  console.info("Log from page");
 
   return (
     <main>
