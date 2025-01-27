@@ -14,5 +14,7 @@ Hva vi skal dekke:
 * Middlewares og API-routes
 
 Bonus:
-* Over-engineer mock data
-* Skript opp avhengigheter
+
+* Over-engineer mock
+  data ([eksempel (ekstern)](https://github.com/navikt/sykmeldinger/blob/main/src/server/graphql/mock-db/index.ts))
+* Skript opp avhengigheter ([eksempel (ekstern)](https://github.com/navikt/syk-inn/tree/main/scripts))
