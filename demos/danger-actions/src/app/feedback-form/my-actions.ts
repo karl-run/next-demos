@@ -17,14 +17,14 @@ export async function submitMyForm(
   _: unknown,
   formData: FormData,
 ): Promise<SubmitMyFormResult> {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
 
   const validatedFields = myFormActionSchema.safeParse({
     email: formData.get("email"),
     message: formData.get("message"),
   });
 
-    console.log("Yooooooo!");
+  console.log("Yooooooo!");
 
   if (!validatedFields.success) {
     return {
@@ -40,9 +40,9 @@ export async function submitMyForm(
 }
 
 export async function myGenericAction(a: string, b: string) {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
 
-    console.info(`Fikk ${a} og ${b} i server action`)
+  console.info(`Fikk ${a} og ${b} i server action`);
 
-    return `${a} ${b}! (${Math.random()})`;
+  return `${a} ${b}! (${Math.random()})`;
 }

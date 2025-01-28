@@ -13,8 +13,9 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body className="container mx-auto mt-8 max-w-prose">
-      <h1 className="text-2xl">Statisk layout header</h1>
-      {children}</body>
+        <h1 className="text-2xl">Statisk layout header</h1>
+        {children}
+      </body>
     </html>
   );
 }
