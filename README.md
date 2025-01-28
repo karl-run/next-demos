@@ -17,6 +17,9 @@ Hva vi skal dekke:
 * Bruk Next.js som en "SPA", dropp Express-serveren ([eksempel](demos/spa-ish))
   * Docs:
     * [Single Page App](https://nextjs.org/docs/app/building-your-application/upgrading/single-page-applications)
+* Server actions, det er fali det ([eksempel](demos/danger-actions))
+  * Docs:
+    * [Server Actions](https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations)
 * Logging i Next.js server ([eksempel](demos/logging))
   * Biblioteker:
     * [next-logger](https://www.npmjs.com/package/next-logger) (brukt i eksempelet)
