@@ -10,7 +10,7 @@ export function ClientComponent() {
   const [state, setState] = useState("Initial value");
 
   return (
-    <div>
+    <div className="border border-dotted p-2">
       <h2>Dette er en klient-komponent!</h2>
       <div>State: {state}</div>
       <button

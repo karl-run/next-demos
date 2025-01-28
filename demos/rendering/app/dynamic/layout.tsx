@@ -9,8 +9,9 @@ export default async function DynamicLayout({ children }: PropsWithChildren) {
 
   return (
     <div>
-      <h2>Dynamisk layout header</h2>
-      {children}
+      <h2 className="text-lg mt-2">Dynamisk layout header</h2>
+      <p>Her kommer noen barn:</p>
+      <div className="border p-2">{children}</div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { headers } from "next/headers";
 import { ClientComponent } from "@/app/dynamic/client-component";
+import Link from "next/link";
 
 export default async function DynamicPage() {
   // Bruk av headers() eller cookies() gjør denne layouten dynamisk
@@ -12,9 +13,20 @@ export default async function DynamicPage() {
 
   return (
     <div>
-      <h3>Page (leaf node)</h3>
+      <h3 className="font-bold">Page med blokkerende data (leaf node)</h3>
       <div>Data: {JSON.stringify(data, null, 2)}</div>
-      <ClientComponent />
+      <p>Her kommer en klient-komponent</p>
+      <div className="border p-2">
+        <ClientComponent />
+      </div>
+      <div className="mt-4 flex flex-col gap-2">
+        <Link href="/dynamic/suspense" className="underline">
+          Gå til dynamisk side med suspense
+        </Link>
+        <Link href="/" className="underline">
+          Tilbake til statisk side
+        </Link>
+      </div>
     </div>
   );
 }
