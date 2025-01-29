@@ -3,7 +3,7 @@ import "./globals.css";
 import { PropsWithChildren } from "react";
 
 export const metadata: Metadata = {
-  title: "Server Actions",
+  title: "Server Actions eksempel",
 };
 
 export default function RootLayout({ children }: PropsWithChildren) {
