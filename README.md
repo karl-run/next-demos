@@ -29,7 +29,7 @@ Hva vi skal dekke:
   * Docs:
     * [Miljøvariabler i server](https://nextjs.org/docs/app/building-your-application/configuring/environment-variables)
     * [Miljøvariabler i browser](https://nextjs.org/docs/app/building-your-application/configuring/environment-variables#bundling-environment-variables-for-the-browser)
-* API Routes
+* API Routes ([eksempel (ekstern)](https://github.com/navikt/syk-inn/blob/main/src/app/(fhir)/fhir/sykmelding/submit/route.ts#L48))
   * Docs:
     * [API Routes](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)
   * Biblioteker:
