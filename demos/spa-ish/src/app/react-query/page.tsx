@@ -6,12 +6,13 @@ import Link from "next/link";
 
 function Page(): ReactElement {
   const [waitTime, setWaitTime] = React.useState<number | null>(null);
-  const { data, isLoading, error, refetch } = useQuery({
+  const { data, isLoading, isRefetching, error, refetch } = useQuery({
     queryKey: ["eksempel"],
     queryFn: async (): Promise<{ message: string }> => {
       const params = waitTime != null ? `?wait=${waitTime}` : "";
       return fetch(`/api/eksempel${params}`).then((res) => res.json());
     },
+
   });
 
   const [shouldCrash, setShouldCrash] = React.useState(false);
@@ -23,6 +24,7 @@ function Page(): ReactElement {
         <div className="border p-1">{data?.message ?? "ingenting enda"}</div>
       </div>
       <div>Laster det? {isLoading ? "Ja" : "Nei"}</div>
+      <div>Hentes det på nytt? {isRefetching ? "Ja" : "Nei"}</div>
       <div>Skjedde det en feil? {error ? `Ja, ${error.message}` : "Nei"}</div>
       <div>
         Ventetid:{" "}
