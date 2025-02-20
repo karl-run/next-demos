@@ -2,10 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { PropsWithChildren } from "react";
 
-export const metadata: Metadata = {
-  title: "Rendering eksempel",
-};
-
 export default function RootLayout({ children }: PropsWithChildren) {
   console.info("Statisk root layout");
 

@@ -11,7 +11,7 @@ export default async function DynamicPage() {
 
   return (
     <div>
-      <h3 className="font-bold">Page med suspense'd data (leaf node)</h3>
+      <h3 className="font-bold">Page med suspensed data (leaf node)</h3>
       <Suspense fallback={<div>Loading...</div>}>
         <ServerComponentWithData />
       </Suspense>
