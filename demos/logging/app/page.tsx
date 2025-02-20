@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const dynamic = "force-dynamic";
 
 export default function Home() {
@@ -6,6 +8,7 @@ export default function Home() {
   return (
     <main>
       <div>Hello world!</div>
+        <Link href="/error" className="underline">Go to server error page</Link>
     </main>
   );
 }
